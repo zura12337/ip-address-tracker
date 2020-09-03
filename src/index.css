@@ -12,8 +12,9 @@ code {
 
 .header {
   width: 100%;
-  height: 250px;
-  background: url("/images/pattern-bg.png");
+  height: 325px;
+  background: url("/images/pattern-bg.png") no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,4 +49,38 @@ code {
   background-color: hsl(0, 0%, 17%);
   color: white;
   font-weight: 700;
+  transition: 0.5s;
+}
+#ip-submit:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+
+.results {
+  width: 70%;
+  height: 150px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  position: absolute;
+  top: 250px;
+  left: 15%;
+}
+
+.results-table th,
+td {
+  font-weight: 700;
+}
+.results-table thead th {
+  color: hsl(0, 0%, 59%);
+}
+.results-table tbody td {
+  color: hsl(0, 0%, 17%);
+  font-size: 28px;
+}
+.results-table {
+  border-collapse: separate;
+  border-spacing: 10px;
 }
