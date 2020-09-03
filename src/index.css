@@ -69,9 +69,16 @@ code {
   left: 15%;
 }
 
+.results-table {
+  border-collapse: collapse;
+}
 .results-table th,
 td {
   font-weight: 700;
+}
+.results-table th:nth-child(1n + 2),
+td:nth-child(1n + 2) {
+  border-left: 1px solid hsl(0, 0%, 59%);
 }
 .results-table thead th {
   color: hsl(0, 0%, 59%);
@@ -79,8 +86,4 @@ td {
 .results-table tbody td {
   color: hsl(0, 0%, 17%);
   font-size: 28px;
-}
-.results-table {
-  border-collapse: separate;
-  border-spacing: 10px;
 }
