@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/ip-address-tracker/static/css/main.262716a4.chunk.css",
-    "main.js": "/ip-address-tracker/static/js/main.84ba8b4d.chunk.js",
-    "main.js.map": "/ip-address-tracker/static/js/main.84ba8b4d.chunk.js.map",
+    "main.css": "/ip-address-tracker/static/css/main.0913ac33.chunk.css",
+    "main.js": "/ip-address-tracker/static/js/main.590ef903.chunk.js",
+    "main.js.map": "/ip-address-tracker/static/js/main.590ef903.chunk.js.map",
     "runtime-main.js": "/ip-address-tracker/static/js/runtime-main.b78ae688.js",
     "runtime-main.js.map": "/ip-address-tracker/static/js/runtime-main.b78ae688.js.map",
     "static/css/2.5ed854c7.chunk.css": "/ip-address-tracker/static/css/2.5ed854c7.chunk.css",
-    "static/js/2.93b8a81f.chunk.js": "/ip-address-tracker/static/js/2.93b8a81f.chunk.js",
-    "static/js/2.93b8a81f.chunk.js.map": "/ip-address-tracker/static/js/2.93b8a81f.chunk.js.map",
+    "static/js/2.f96d9a13.chunk.js": "/ip-address-tracker/static/js/2.f96d9a13.chunk.js",
+    "static/js/2.f96d9a13.chunk.js.map": "/ip-address-tracker/static/js/2.f96d9a13.chunk.js.map",
     "index.html": "/ip-address-tracker/index.html",
-    "precache-manifest.e45c1187621d6827fea302a82562ad0b.js": "/ip-address-tracker/precache-manifest.e45c1187621d6827fea302a82562ad0b.js",
+    "precache-manifest.e026dc2f8ed5693a02ff00053caa947e.js": "/ip-address-tracker/precache-manifest.e026dc2f8ed5693a02ff00053caa947e.js",
     "service-worker.js": "/ip-address-tracker/service-worker.js",
     "static/css/2.5ed854c7.chunk.css.map": "/ip-address-tracker/static/css/2.5ed854c7.chunk.css.map",
-    "static/css/main.262716a4.chunk.css.map": "/ip-address-tracker/static/css/main.262716a4.chunk.css.map",
-    "static/js/2.93b8a81f.chunk.js.LICENSE.txt": "/ip-address-tracker/static/js/2.93b8a81f.chunk.js.LICENSE.txt"
+    "static/css/main.0913ac33.chunk.css.map": "/ip-address-tracker/static/css/main.0913ac33.chunk.css.map",
+    "static/js/2.f96d9a13.chunk.js.LICENSE.txt": "/ip-address-tracker/static/js/2.f96d9a13.chunk.js.LICENSE.txt",
+    "static/media/icon-arrow.svg": "/ip-address-tracker/static/media/icon-arrow.53ef8ed8.svg",
+    "static/media/index.css": "/ip-address-tracker/static/media/pattern-bg.8d3f4ad6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b78ae688.js",
     "static/css/2.5ed854c7.chunk.css",
-    "static/js/2.93b8a81f.chunk.js",
-    "static/css/main.262716a4.chunk.css",
-    "static/js/main.84ba8b4d.chunk.js"
+    "static/js/2.f96d9a13.chunk.js",
+    "static/css/main.0913ac33.chunk.css",
+    "static/js/main.590ef903.chunk.js"
   ]
 }
