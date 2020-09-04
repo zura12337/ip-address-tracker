@@ -27,7 +27,11 @@ class App extends Component {
           e.target[0].value
       );
       console.log(data);
-      this.setState({ lat: data.location.lat, lng: data.location.lng });
+      this.setState({
+        lat: data.location.lat,
+        lng: data.location.lng,
+        zoom: 13,
+      });
       this.setState({ data });
     } catch (ex) {
       console.log(ex.response);
@@ -39,7 +43,7 @@ class App extends Component {
   }
 
   render() {
-    const { ipAddress, data, lat, lng, zoom } = this.state;
+    const { ipAddress, data, zoom } = this.state;
     const { handleChange, onSubmit } = this;
     const position = this.getMapData();
     return (
@@ -55,9 +59,7 @@ class App extends Component {
             attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={position} icon={myIcon}>
-            <Popup>A preety CSS3 Popup</Popup>
-          </Marker>
+          <Marker position={position} icon={myIcon}></Marker>
         </Map>
       </div>
     );
