@@ -13,7 +13,7 @@ code {
 .header {
   width: 100%;
   height: 325px;
-  background: url("/images/pattern-bg.png") no-repeat;
+  background-image: url("./images/pattern-bg.png");
   background-size: cover;
   display: flex;
   flex-direction: column;

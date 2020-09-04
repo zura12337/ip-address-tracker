@@ -18,7 +18,9 @@ class Header extends Component {
             value={this.props.ipAddress}
             onChange={this.props.onChange}
           />
-          <input type="submit" value=">" id="ip-submit" />
+          <button type="submit" id="ip-submit">
+            <img src={require("../images/icon-arrow.svg")} alt=">" />
+          </button>
         </form>
       </div>
     );
