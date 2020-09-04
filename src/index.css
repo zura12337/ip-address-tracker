@@ -86,7 +86,7 @@ td:nth-child(1n + 2) {
 }
 .results-table tbody td {
   color: hsl(0, 0%, 17%);
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .map {
