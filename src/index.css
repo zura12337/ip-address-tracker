@@ -67,6 +67,7 @@ code {
   position: absolute;
   top: 250px;
   left: 15%;
+  z-index: 2;
 }
 
 .results-table {
@@ -86,4 +87,9 @@ td:nth-child(1n + 2) {
 .results-table tbody td {
   color: hsl(0, 0%, 17%);
   font-size: 28px;
+}
+
+.map {
+  height: 45vh;
+  z-index: 1;
 }
