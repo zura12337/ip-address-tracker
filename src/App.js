@@ -4,7 +4,7 @@ import Results from "./components/results";
 import axios from "axios";
 import { toast } from "react-toastify";
 import L from "leaflet";
-import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import { Map, TileLayer, Marker } from "react-leaflet";
 import Loading from "./components/common/loading";
 
 var myIcon = L.icon({
@@ -22,8 +22,8 @@ class App extends Component {
     this.setState({ ipAddress: e.target.value });
   };
   onSubmit = () => {
-    try {
-      this.setState({ loading: true }, async () => {
+    this.setState({ loading: true }, async () => {
+      try {
         const { data } = await axios.get(
           "https://geo.ipify.org/api/v1?apiKey=at_mmHB8KrhJdOPXm1urLb0h1GpJgmnj&ipAddress=" +
             this.state.ipAddress
@@ -34,10 +34,11 @@ class App extends Component {
           zoom: 8,
         });
         this.setState({ data, loading: false });
-      });
-    } catch (ex) {
-      toast.error(ex.response.data.messages);
-    }
+      } catch (ex) {
+        toast.error(ex.response.data.messages);
+        this.setState({ loading: false });
+      }
+    });
   };
   getMapData() {
     return [this.state.lat, this.state.lng];

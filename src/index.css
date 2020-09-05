@@ -1,13 +1,9 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 .header {
@@ -49,7 +45,23 @@ code {
   background-color: hsl(0, 0%, 17%);
   color: white;
   font-weight: 700;
+  outline: none;
   transition: 0.5s;
+}
+@media (max-width: 768px) {
+  .header {
+    height: 250px;
+  }
+  .header h1 {
+    font-size: 20px;
+  }
+  .header form {
+    width: 90%;
+    display: flex;
+  }
+  #ip-input {
+    width: 85%;
+  }
 }
 #ip-submit:hover {
   background-color: hsl(0, 0%, 30%);
@@ -58,10 +70,13 @@ code {
 .results {
   width: 70%;
   height: 150px;
+  padding: 5px;
   background: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
+  grid-gap: 30px;
   align-items: center;
   border-radius: 15px;
   position: absolute;
@@ -69,24 +84,20 @@ code {
   left: 15%;
   z-index: 2;
 }
-
-.results-table {
-  border-collapse: collapse;
+.column {
+  padding-left: 20px;
 }
-.results-table th,
-td {
-  font-weight: 700;
+.column h3 {
+  font-size: 25px;
 }
-.results-table th:nth-child(1n + 2),
-td:nth-child(1n + 2) {
-  border-left: 1px solid hsl(0, 0%, 59%);
-}
-.results-table thead th {
+.column p {
+  text-transform: uppercase;
   color: hsl(0, 0%, 59%);
+  font-weight: 700;
+  font-size: 13px;
 }
-.results-table tbody td {
-  color: hsl(0, 0%, 17%);
-  font-size: 24px;
+.column:nth-child(1n + 2) {
+  border-left: 1px solid hsl(0, 0%, 59%);
 }
 
 .map {
@@ -114,6 +125,11 @@ td:nth-child(1n + 2) {
   background: white;
   border-radius: 20px;
   box-shadow: 0 0 1000px 100px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .loading {
+    left: 37.5%;
+  }
 }
 svg {
   position: relative;

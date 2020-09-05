@@ -8,7 +8,7 @@ class Results extends Component {
       data,
       data.location ? (
         <div className="results">
-          <table className="results-table">
+          {/* <table className="results-table">
             <thead>
               <th className="col-1">IP address</th>
               <th className="col-1">Location</th>
@@ -25,7 +25,25 @@ class Results extends Component {
                 <td className="col-1">{data.isp}</td>
               </tr>
             </tbody>
-          </table>
+          </table> */}
+          <div className="column ip-col">
+            <p>IP Address</p>
+            <h3>{data.ip}</h3>
+          </div>
+          <div className="column location-col">
+            <p>Location</p>
+            <h3>
+              {data.location.city}, {data.location.country}
+            </h3>
+          </div>
+          <div className="column timezone-col">
+            <p>Timezone</p>
+            <h3>UTC {data.location.timezone}</h3>
+          </div>
+          <div className="column isp-col">
+            <p>ISP</p>
+            <h3>{data.isp}</h3>
+          </div>
         </div>
       ) : (
         <> </>
